@@ -68,6 +68,7 @@
 		一般Bootloader启动过程
 		启动代码
 		主循环与命令行
+		外围硬件编程
 		存储器控制与自拷贝
 		增加网络支持
 		Bootloader与Linux内核的交互	
@@ -86,6 +87,7 @@
 	Linux内核的异常处理与中断
 	串口驱动
 	网卡驱动
+	多媒体编程
 	SD卡驱动
 	LCD驱动
 	USB驱动
@@ -98,5 +100,6 @@
 
 附录
 OpenBoard编码规范
+OpenBoard项目管理规范
 OpenBoard硬件原理图
 OpenBoard文档与资料列表
