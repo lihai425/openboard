@@ -1,8 +1,9 @@
-开源嵌入式开发参考手册——基于OpenBoard i.MX233
+书名：《开源嵌入式开发参考手册——基于OpenBoard i.MX233》
+
 
 三级目录
 	
-概述
+第一章 概述
 ├──什么是“开源嵌入式”
 │  ├──开源世界简史
 │  ├──什么是嵌入式技术
@@ -13,24 +14,33 @@
 │——文档的组织
 └──关于版权于软件协议
 
-
-OpenBoard i.MX 快速上手指南
-	嵌入式Linux开发环境搭建
-
-OpenBoard的的硬件设计
-	i.MX233处理器最小系统设计
-	i.MX233接口介绍
-	Openboard存储器设计
-	OpenBoard网卡与物联网设计
-
-嵌入式基础
+第二章 嵌入式基础
 │——嵌入式系统概念
 │——嵌入式系统组成
 │  ├──嵌入式处理器简介
 │  └──板级支持包和嵌入式操作系统
 └──嵌入式开发的行业特点
 
-ARM体系结构
+
+第三章 OpenBoard i.MX233 快速上手指南
+	关于OpenBoard i.MX233开源开发平台
+	嵌入式Linux开发环境搭建
+	快速上手	
+	固件与外围设备编程实验
+	烧写Bootloader、内核和文件系统
+	基于Linux系统设备驱动编程实验
+	基于Linux的应用编程实验
+	
+第四章 OpenBoard的的硬件设计
+	i.MX233处理器最小系统设计
+	i.MX233接口介绍
+	存储器设计
+	LCD接口设计
+	多媒体接口设计
+	网卡与物联网设计
+	OpenBoard Debugger 硬件设计
+
+第五章 ARM体系结构
 ├──ARM简介
 │  ├──RISC指令集与CISC指令集
 │  ├──常用ARM处理器系列
@@ -44,19 +54,25 @@ ARM体系结构
 ├──ARM处理器模式
 ├──ARM内核寄存器
 ├──ARM体系结构的异常中断
-└──ARM体系结构的存储系统
-   ├──地址空间
-   ├──存储器格式
-   └──非对齐存储器访问
+├──ARM体系结构的存储系统
+│  ├──地址空间
+│  ├──存储器格式
+│  └──非对齐存储器访问
+└── ARMv5指令集
+   ├──ARM处理器寻址方式
+   └──指令集介绍
 
-ARMv5指令集
-├──ARM处理器寻址方式
-└──指令集介绍
-
-基于OpenBoard构建嵌入式Linux系统
+第六章 OpenBoard板级支持包（BSP）开发
+	Bootloader——NiuBoot
+		什么是Bootloader
+		一般Bootloader启动过程
+		启动代码
+		主循环与命令行
+		存储器控制与自拷贝
+		增加网络支持
+		Bootloader与Linux内核的交互	
 	Linux内核移植
 		Linux内核的获取
-		Bootloader与Linux内核的交互
 		Linux内核配置
 		Linux内核编译
 		Linux内核启动过程
@@ -65,7 +81,7 @@ ARMv5指令集
 		制作根文件系统
 		根文件系统启动过程
 		
-嵌入式Linux驱动开发
+第七章 嵌入式Linux驱动开发
 	字符设备驱动
 	Linux内核的异常处理与中断
 	串口驱动
@@ -74,6 +90,13 @@ ARMv5指令集
 	LCD驱动
 	USB驱动
 
-OpenBoard界面开发
+第八章 OpenBoard界面开发
+       X.org系统移植
+       GTK+界面移植
+       QT界面移植
+       使用Framebuffer与SDL创作个性化的界面
 
-
+附录
+OpenBoard编码规范
+OpenBoard硬件原理图
+OpenBoard文档与资料列表
